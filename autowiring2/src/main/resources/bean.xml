@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean class="autowiring2.Employee" id="emp1" autowire="byName">
+    <property name="empId" value="3"></property>
+    <property name="empName" value="THARU"></property>
+    <property name="empEmail" value="tharu@gmail.com"></property>
+    </bean>
+    <bean class="autowiring2.Employee" id="emp2" autowire="byName">
+    <property name="empId" value="5"></property>
+    <property name="empName" value="hari"></property>
+    <property name="empEmail" value="hari@gmail.com"></property>
+    </bean>
+    <bean class="autowiring2.Pancard" id="pancard">
+    <property name="panHolderName" value="Krishna"></property>
+    <property name="panNumber" value="1234"></property>
+    </bean>
+
+</beans>
